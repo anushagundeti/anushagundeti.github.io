@@ -81,7 +81,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -120,7 +120,9 @@ nav {
   margin: 0 10px;
   transition: background 0.3s ease;
 }
-
+section {
+  scroll-margin-top: 80px;
+} 
 .btn-outline {
   background: transparent;
   border: 2px solid #ff6347;
@@ -138,7 +140,7 @@ nav {
 
 /* About Section */
 .about {
-  padding: 60px 20px;
+  padding: 25px 20px;
   text-align: center;
 }
 
@@ -501,4 +503,16 @@ footer {
 
 .close:hover {
   color: #ff6347;
+}
+#github-projects .project-card:nth-child(1) {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+#github-projects .project-card:nth-child(2) {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+#github-projects .project-card:nth-child(3) {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+#github-projects .project-card:nth-child(4) {
+  background: linear-gradient(135deg, #cfd9df, #e2ebf0);
 }
